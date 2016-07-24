@@ -49,24 +49,24 @@ or
 
 # App Configuration
 
-Edit ```src/source/conf/app.php``` 
+Edit Edit [src/source/conf/app.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/app.php "src/source/conf/app.php")
 
 ```
 <?php
 
-return array(
-    'debug'             => false,
-    'page_base'         => 'http://'.$_SERVER['HTTP_HOST'].''.str_replace('index.php','',$_SERVER['PHP_SELF']),
-    'page_name'         => 'vld_mockup_base', 
-    'page_claim'        => '',
-    'page_domain'       => $_SERVER['HTTP_HOST'],
-    
-    'layout'            => 'vld_mockup_base',
-    'frontend_url'      => 'http://'.$_SERVER['HTTP_HOST'],
-    
-    'path_data'         => 'data/',     
-    'user_secret'       => 'change!me',
-);
+    return array(
+        'debug'             => false,
+        'page_base'         => 'http://'.$_SERVER['HTTP_HOST'].''.str_replace('index.php','',$_SERVER['PHP_SELF']),
+        'page_name'         => 'vld_mockup_base', 
+        'page_claim'        => '',
+        'page_domain'       => $_SERVER['HTTP_HOST'],
+        
+        'layout'            => 'vld_mockup_base',
+        'frontend_url'      => 'http://'.$_SERVER['HTTP_HOST'],
+        
+        'path_data'         => 'data/',     
+        'user_secret'       => 'change!me',
+    );
 ```
 
 # CSS Configuration
@@ -88,15 +88,15 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 # Add Route or Edit Routes
 
 ```
-'slug' => array(
-    'label'         => 'Changeme',
-    'module'        => 'modulename',
-    'controller'    => 'controllername',
-    'action'        => 'actioname',
-    'view'          => 'templatename',
-    'is_login'      => 'booth' | false | true,
-    'is_xhr'        => true | empty or false
-),
+    'slug' => array(
+        'label'         => 'Changeme',
+        'module'        => 'modulename',
+        'controller'    => 'controllername',
+        'action'        => 'actioname',
+        'view'          => 'templatename',
+        'is_login'      => 'booth' | false | true,
+        'is_xhr'        => true | empty or false
+    ),
 ````
 
 ### ```slug``` is the Page URL Path like ```my/path/to/somewhere```
