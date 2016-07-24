@@ -10,7 +10,7 @@ This is a pure PHP MVC Skeleton with Bower and Grunt.
 - using Bower to keep Dependencies up to date
   - jQuery
   - bootstrap
-  - awesme font
+  - awesome font
   - flex grid
 - Grunt
   - download google fonts and create fonts.css
@@ -18,7 +18,7 @@ This is a pure PHP MVC Skeleton with Bower and Grunt.
   - combining less and js
   - watch task
 - login for combined or not
-- addition less
+- additional less
   - bootstrap overrides for better box cascading
   - set grid's Stegbreite
   - set different Stegbreiten by breakpoints
