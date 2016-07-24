@@ -73,7 +73,7 @@ npm install
 - Now you can run
 
 ####```grunt watch``` is the watch task while developing
-####```grunt export``` makes a complete build, without cleanup before
+####```grunt export``` makes a complete build with dependencies, without cleanup before
 ####```grunt refresh``` export with cleanup before
 ####```grunt flush``` drops all files *.js *.css *.phtml in ```build``` and ```htdocs```
 
