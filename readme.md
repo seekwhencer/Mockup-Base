@@ -85,15 +85,17 @@ The watch task compiles and sync with the build and htdocs folder.
 
 Edit Edit [src/source/conf/app.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/app.php "src/source/conf/app.php")
 
-## CSS Configuration
+## HTML Header
+
+### CSS Configuration
 
 Edit [src/source/conf/css.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/css.php "src/source/conf/css.php")
 
-## Javascript Configuration
+### Javascript Configuration
 
 Edit [src/source/conf/js.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/js.php "src/source/conf/js.php")
 
-## HTML Meta Configuration
+### Meta Configuration
 
 Edit [src/source/conf/meta.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/meta.php "src/source/conf/meta.php")
 
@@ -101,7 +103,7 @@ Edit [src/source/conf/meta.php](https://github.com/seekwhencer/Mockup-base/blob/
 
 Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/route.php "src/source/conf/route.php") 
 
-## Add Route or Edit Routes
+### Add Route or Edit Routes
 
 ```
     'slug' => array(
