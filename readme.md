@@ -30,9 +30,14 @@ The ```htdocs``` Folder is the final Web-App, without syncing or overwrites some
 
 ## Grunt first Time
 
-- Installing Grunt
+- Go into the Working Root folder
+
+```cd /my/projects/rootpath```
+
+- Installing Grunt and Bower
 ```
-npm install grunt
+npm install -g bower
+npm install -g grunt-cli
 ```
 
 - Installing dependencies from ```package.js```
