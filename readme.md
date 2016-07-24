@@ -54,71 +54,49 @@ Edit ```src/source/conf/app.php```
 ```
 <?php
 
-    return array(
+return array(
+    'debug'             => false,
+    'page_base'         => 'http://'.$_SERVER['HTTP_HOST'].''.str_replace('index.php','',$_SERVER['PHP_SELF']),
+    'page_name'         => 'vld_mockup_base', 
+    'page_claim'        => '',
+    'page_domain'       => $_SERVER['HTTP_HOST'],
     
-        'debug'             => false,
-        'page_base'         => 'http://'.$_SERVER['HTTP_HOST'].''.str_replace('index.php','',$_SERVER['PHP_SELF']),
-        'page_name'         => 'vld_mockup_base', 
-        'page_claim'        => '',
-        'page_domain'       => $_SERVER['HTTP_HOST'],
-        
-        'layout'            => 'vld_mockup_base',
-        'frontend_url'      => 'http://'.$_SERVER['HTTP_HOST'],
-        
-        'path_data'         => 'data/',     
-        'user_secret'       => 'change!me',
-    );
+    'layout'            => 'vld_mockup_base',
+    'frontend_url'      => 'http://'.$_SERVER['HTTP_HOST'],
+    
+    'path_data'         => 'data/',     
+    'user_secret'       => 'change!me',
+);
 ```
 
 # CSS Configuration
 
 Edit ```src/source/conf/css.php``` 
 
-```
-<?php
-            $_p->addStyle("vld_main.css?".time()); 
-            $_p->addStyle('assets/font-awesome.min.css');
-            $_p->addStyle('fonts.css');
-```
-
-
-
 # Javascript Configuration
 
 Edit ```src/source/conf/js.php``` 
-
-```
-<?php   
-        $_p->addScript('vld_main.js?'.time());
-        $_p->addScript('assets/bootstrap/bootstrap.min.js');
-        $_p->addScript('assets/jquery/jquery.min.js');           
-```
 
 # HTML Meta Configuration
 
 Edit ```src/source/conf/meta.php``` 
 
-```
-<?php
-    $this->addMeta('http-equiv', 'Content-Type', 'content', 'text/html; charset=UTF-8');
-    $this->addMeta('name','robots','content','index,follow');
-    $this->addMeta('name','viewport','content','width=device-width, initial-scale=1, maximum-scale=1');
-```
-
 # The Router
 
 Edit ```src/source/conf/route.php``` 
 
+[src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/route.php "src/source/conf/route.php"),
+
 ```
 'login' => array(
-        'label'         => 'Login',
-        'module'        => 'user',
-        'controller'    => 'user',
-        'action'        => 'login',
-        'view'          => 'login',
-        'is_login'      => 'booth' | false | true,
-        'is_xhr'        => true | empty or false
-    ),
+    'label'         => 'Login',
+    'module'        => 'user',
+    'controller'    => 'user',
+    'action'        => 'login',
+    'view'          => 'login',
+    'is_login'      => 'booth' | false | true,
+    'is_xhr'        => true | empty or false
+),
 ````
 
 Add or edit the Array Elements.
