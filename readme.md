@@ -8,20 +8,20 @@ This is a pure PHP MVC Skeleton with Bower and Grunt.
 - simple cascading of PHP template files
 - router mapping for urls to template file, module, controller and action
 - using Bower to keep Dependencies up to date
--- jQuery
--- bootstrap
--- awesme font
--- flex grid
+  - jQuery
+  - bootstrap
+  - awesme font
+  - flex grid
 - Grunt
--- download google fonts and create fonts.css
--- compiling less, and lint
--- combining less and js
--- watch task
+  - download google fonts and create fonts.css
+  - compiling less, and lint
+  - combining less and js
+  - watch task
 - login for combined or not
 - addition less
--- bootstrap overrides for better box cascading
--- set grid's Stegbreite
--- set different Stegbreiten by breakpoints
+  - bootstrap overrides for better box cascading
+  - set grid's Stegbreite
+  - set different Stegbreiten by breakpoints
 
 ## Folder Tree
 ```
