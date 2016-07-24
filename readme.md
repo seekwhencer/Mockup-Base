@@ -99,8 +99,8 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 ),
 ````
 
-## ```slug``` is the Page URL Path like ```my/path/to/somewhere```
-## The Array is located in the global Object ```$_p```.
+### ```slug``` is the Page URL Path like ```my/path/to/somewhere```
+### The Array is located in the global Object ```$_p```.
 
 # Add or edit the Array Elements.
 
@@ -108,10 +108,10 @@ as you will
 
 # Cascading Templates
 
-##Any Template is located in ```source/modulename/view/``` as ```*.phtml```. In a Template you can call: ``` <?= $_c->partial(); ?> ``` after you get the ```$_c``` globally with: ```<?php global $_c; ?>```
-##The Partial-Method wants two or thre Arguments: ``` partial($page,$action,$path=false) ```.
-##```$page`` is the Template Name like ```login``` without ```.phtml```. ```$action``` is an Array of any Data and ```path``` is like ```source/module/modulename/view```.
-##The ```$action``` Data is also accessible as ```$action``` Variable in the included Template.
+###Any Template is located in ```source/modulename/view/``` as ```*.phtml```. In a Template you can call: ``` <?= $_c->partial(); ?> ``` after you get the ```$_c``` globally with: ```<?php global $_c; ?>```
+###The Partial-Method wants two or thre Arguments: ``` partial($page,$action,$path=false) ```.
+###```$page``` is the Template Name like ```login``` without ```.phtml```. ```$action``` is an Array of any Data and ```path``` is like ```source/module/modulename/view```.
+###The ```$action``` Data is also accessible as ```$action``` Variable in the included Template.
 
 
 
