@@ -3,7 +3,7 @@
 Matthias Kallenbach
 Summer 2016
 
-matthias.kallenbach@valid-digital.com
+matthias.kallenbach@vgmail.com
 
 */
 
@@ -285,53 +285,5 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('refresh', ['flush', 'export']);
     
-    /**
-     * 
-     */
-
-    grunt.registerTask('phantom', '...', function() {
-        var phantomjs = require('grunt-lib-phantomjs').init(grunt);
-        var errorCount = 0;
-
-        // Handle any number of namespaced events like so.
-        phantomjs.on('mytask.ok', function(msg) {
-            grunt.log.writeln(msg);
-        });
-
-        phantomjs.on('mytask.error', function(msg) {
-            errorCount++;
-            grunt.log.error(msg);
-        });
-
-        // Create some kind of "all done" event.
-        phantomjs.on('mytask.done', function() {
-            phantomjs.halt();
-        });
-
-        // Built-in error handlers.
-        phantomjs.on('fail.load', function(url) {
-            phantomjs.halt();
-            grunt.warn('PhantomJS unable to load URL.');
-        });
-
-        phantomjs.on('fail.timeout', function() {
-            phantomjs.halt();
-            grunt.warn('PhantomJS timed out.');
-        });
-
-        // This task is async.
-        var done = this.async();
-
-        // Spawn phantomjs
-        phantomjs.spawn('phantom.js', {
-            // Additional PhantomJS options.
-            options : {},
-            // Complete the task when done.
-            done : function(err) {
-                done(err || errorCount === 0);
-            }
-        });
-
-    }); 
 
 };
