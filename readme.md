@@ -71,34 +71,47 @@ return array(
 
 # CSS Configuration
 
-Edit ```src/source/conf/css.php``` 
+Edit [src/source/conf/css.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/css.php "src/source/conf/css.php")
 
 # Javascript Configuration
 
-Edit ```src/source/conf/js.php``` 
+Edit [src/source/conf/js.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/js.php "src/source/conf/js.php")
 
 # HTML Meta Configuration
 
-Edit ```src/source/conf/meta.php``` 
+Edit [src/source/conf/meta.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/meta.php "src/source/conf/meta.php")
 
 # The Router
 
-Edit ```src/source/conf/route.php``` 
+Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/route.php "src/source/conf/route.php") 
 
-[src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob/master/src/source/conf/route.php "src/source/conf/route.php"),
+# Add Route or Edit Routes
 
 ```
-'login' => array(
-    'label'         => 'Login',
-    'module'        => 'user',
-    'controller'    => 'user',
-    'action'        => 'login',
-    'view'          => 'login',
+'slug' => array(
+    'label'         => 'Changeme',
+    'module'        => 'modulename',
+    'controller'    => 'controllername',
+    'action'        => 'actioname',
+    'view'          => 'templatename',
     'is_login'      => 'booth' | false | true,
     'is_xhr'        => true | empty or false
 ),
 ````
 
-Add or edit the Array Elements.
+## ```slug``` is the Page URL Path like ```my/path/to/somewhere```
+## The Array is located in the global Object ```$_p```.
+
+# Add or edit the Array Elements.
+
+as you will
+
+# Cascading Templates
+
+##Any Template is located in ```source/modulename/view/``` as ```*.phtml```. In a Template you can call: ``` <?= $_c->partial(); ?> ``` after you get the ```$_c``` globally with: ```<?php global $_c; ?>```
+##The Partial-Method wants two or thre Arguments: ``` partial($page,$action,$path=false) ```.
+##```$page`` is the Template Name like ```login``` without ```.phtml```. ```$action``` is an Array of any Data and ```path``` is like ```source/module/modulename/view```.
+##The ```$action``` Data is also accessible as ```$action``` Variable in the included Template.
+
 
 
