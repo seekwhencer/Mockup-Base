@@ -189,7 +189,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                  'build/css/combined.min.css': ['**/build/css/**/*.css', '!**/build/css/**/*.min.css']
+                  'build/css/combined.min.css': ['**/build/css/**/*.css', '!**/build/css/**/*.min.css','!build/css/assets/flex-grid.css']
                 }
             }
         },
