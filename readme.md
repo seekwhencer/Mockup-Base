@@ -42,14 +42,14 @@ npm install
 
 - First Run with grunt
 
-#####```grunt go``` makes a complete refresh with following watch
+####```grunt go``` makes a complete refresh with following watch
 
 - Now you can run
 
-#####```grunt watch``` is the watch task while developing
-#####```grunt export``` makes a complete build, without cleanup before
-#####```grunt refresh``` export with cleanup before
-#####```grunt flush``` drops all files *.js *.css *.phtml in ```build``` and ```htdocs```
+####```grunt watch``` is the watch task while developing
+####```grunt export``` makes a complete build, without cleanup before
+####```grunt refresh``` export with cleanup before
+####```grunt flush``` drops all files *.js *.css *.phtml in ```build``` and ```htdocs```
 
 
 
