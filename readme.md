@@ -78,6 +78,8 @@ npm install
 ####```grunt flush``` drops all files *.js *.css *.phtml in ```build``` and ```htdocs```
 
 
+The watch task compiles and sync with the build and htdocs folder.
+
 
 ## App Configuration
 
@@ -124,5 +126,9 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 ####```$page``` is the Template Name like ```login``` without ```.phtml```. ```$action``` is an Array of any Data and ```$path``` is like ```source/module/modulename/view```.
 ####The ```$action``` Data is also accessible as ```$action``` Variable in the included Template.
 
+## Todo
 
+- better lint-ing ;)
+- browser sync
+- phantomjs
 
