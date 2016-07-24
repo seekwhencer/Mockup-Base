@@ -51,9 +51,19 @@ The ```htdocs``` Folder is the final Web-App, without syncing or overwrites some
 
 ## Grunt first Time
 
-- Go into the Working Root folder
+- Go into the Working Root folder or create one
 
-```cd /my/projects/rootpath```
+
+```
+    sudo mkdir /data
+    cd /data
+    sudo git clone https://github.com/seekwhencer/Mockup-Base.git
+    sudo mv Mockup-Base myprojectfoldername
+       
+    sudo chown -R $USER:$GROUP /data
+    sudo chmod -R 776 /data
+    sudo chmod +x /data
+```
 
 - Installing Grunt and Bower
 ```
@@ -138,6 +148,8 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 
 ## Apache Configuration
 
+- activate mod rewrite with ```sudo a2enmod rewrite ```
+- edit your ```/etc/apache2/envvars``` and change the User and the Group to your own (```echo $USER``` and ```echo $GROUP``` in the shell)
 - copy the file [conf/mockup.conf](https://github.com/seekwhencer/Mockup-base/blob/master/conf/mockup.conf "conf/mockup.conf") into apache's enabled sites folder and
 - edit the file in the destination location. replace ``` DocumentRoot ```, ``` php_admin_value open_basedir ``` and ``` <Directory> ```
 - make a apache restart ```sudo service apache2 restart``` or ```sudo service apache2 reload```
