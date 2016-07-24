@@ -120,11 +120,13 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 
 ## Cascading Templates
 
-####Any Template is located in ```source/module/modulename/view/``` as ```*.phtml```.
+####Any Template is located in ```source/module/modulename/view/``` as ```*.phtml```
 ####In a Template you can call: ``` <?= $_c->partial(); ?> ``` after you get the ```$_c``` globally with: ```<?php global $_c; ?>```
-####The Partial-Method wants two or three Arguments: ``` partial($page,$action,$path=false) ```.
-####```$page``` is the Template Name like ```login``` without ```.phtml```. ```$action``` is an Array of any Data and ```$path``` is like ```source/module/modulename/view```.
-####The ```$action``` Data is also accessible as ```$action``` Variable in the included Template.
+####The Partial-Method wants two or three Arguments: ``` partial($page,$action,$path=false) ```
+####```$page``` is the Template Name like ```login``` without ```.phtml```
+####```$action``` is an Array of any Data 
+####```$path``` is like ```source/module/modulename/view```
+####The ```$action``` Data is also accessible as ```$action``` Variable in the included Template
 
 ## Todo
 
