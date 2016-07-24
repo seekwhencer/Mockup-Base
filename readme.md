@@ -136,3 +136,8 @@ Edit [src/source/conf/route.php](https://github.com/seekwhencer/Mockup-base/blob
 - browser sync
 - phantomjs
 
+## Apache Configuration
+
+- copy the file [conf/mockup.conf](https://github.com/seekwhencer/Mockup-base/blob/master/conf/mockup.conf "conf/mockup.conf") into apache's enabled sites folder and
+- edit the file in the destination location. replace ``` DocumentRoot ```, ``` php_admin_value open_basedir ``` and ``` <Directory> ```
+- make a apache restart ```sudo service apache2 restart``` or ```sudo service apache2 reload```
