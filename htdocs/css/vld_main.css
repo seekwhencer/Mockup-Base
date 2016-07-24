@@ -1,0 +1,114 @@
+* {
+  font-family: 'Roboto';
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  font-weight: 900;
+}
+.vld-section .vld-section-home {
+  position: relative;
+  overflow: hidden;
+}
+.vld-section .vld-section-home .vld-header-row {
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+.vld-section .vld-section-home .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.vld-section .vld-section-home .row div[class^="col-"]:last-child {
+  border-right: none;
+}
+.vld-section .vld-section-home .row div[class^="col-"] {
+  text-align: center;
+  line-height: 50px;
+  font-weight: 900;
+  background-color: rgba(0, 30, 60, 0.1);
+  border-right: 6px solid #ffffff;
+}
+.vld-section .vld-section-home .row div[class^="col-"] .row {
+  border-bottom: none;
+}
+.vld-section .vld-section-home .row div[class^="col-"] .row div[class^="col-"] {
+  border-right: none;
+}
+.vld-section .vld-section-home .vld_code {
+  text-align: left;
+  line-height: 10px;
+  font-family: Monospace;
+  font-weight: 100;
+  color: #555;
+  font-size: 11px;
+}
+.row {
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 6px;
+}
+.row div.vld-h-1 {
+  min-height: 50px;
+}
+.row div.vld-h-2 {
+  min-height: 100px;
+}
+.row .vld-h-3 {
+  min-height: 150px;
+}
+.row .vld-h-4 {
+  min-height: 200px;
+}
+.row .vld-h-5 {
+  min-height: 400px;
+}
+.row div[class^="col-"]:last-child {
+  border-right: none !important;
+}
+@media (max-width: 768px) {
+  .row div[class^="col-"]:last-child {
+    margin-bottom: 0;
+  }
+}
+.row div[class^="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  .row div[class^="col-"] {
+    margin-bottom: 6px;
+    border-right: none !important;
+  }
+}
+.row div[class^="col-"] .row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.row div[class^="col-"] .row div[class^="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 768px) {
+  .row div[class^="col-"] .row div[class^="col-"] {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

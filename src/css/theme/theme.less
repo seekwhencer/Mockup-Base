@@ -1,0 +1,140 @@
+@import "variables.less";
+@import "mixins.less";
+
+* { 
+  font-family:'Roboto';
+}
+
+h1,h2,h3,h4 {
+  margin:0;
+  padding:0;
+  line-height:50px;
+  font-weight:900;
+}
+
+
+.vld-section {
+  
+  .vld-section-home {
+    
+    position:relative;
+    overflow:hidden;
+    
+    .vld-header-row {
+      text-transform:uppercase;
+      letter-spacing:-0.04em;
+    }
+    
+    .row {
+      border-bottom:1px solid rgba(0,0,0,0.3);
+      
+      div[class^="col-"]:last-child {
+        border-right:none;
+      }
+      
+      div[class^="col-"] {
+        text-align:center;
+        line-height:50px;
+        font-weight:900;
+             
+        background-color:rgba(0,30,60,0.1);
+        border-right:@grid-box-padding solid rgba(255, 255, 255, 1);
+        
+        
+        .row {
+          border-bottom:none;
+
+          div[class^="col-"] {
+            border-right:none;
+          }
+
+        }
+      }
+    }
+    .vld_code {
+      text-align:left;
+      line-height:10px;
+      font-family:Monospace;
+      font-weight:100;
+      color:#555;
+      font-size:11px;
+    }
+    
+  }
+  
+}
+
+.row {
+  margin-left:-@grid-box-padding;
+  margin-right:-@grid-box-padding;
+  margin-bottom:@grid-box-padding;
+  
+  
+  div.vld-h-1 {
+  min-height:@vld-box-height-1;
+  }
+  div.vld-h-2 {
+    min-height:@vld-box-height-2;
+  }
+  .vld-h-3 {
+    min-height:@vld-box-height-3;
+  }
+  .vld-h-4 {
+    min-height:@vld-box-height-4;
+  }
+  .vld-h-5 {
+    min-height:@vld-box-height-5;
+  }
+  
+  div[class^="col-"]:last-child {
+    border-right:none !important;
+    @media (max-width: @screen-sm-min) {
+      margin-bottom:0;
+    }
+  }
+  
+  div[class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+    
+  
+    @media (max-width: @screen-sm-min) {
+      margin-bottom:@grid-box-padding;
+      border-right:none !important;
+    }
+    
+    .row {
+      margin-left:0;
+      margin-right:0;
+      margin-bottom:0;
+      
+      div[class^="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+        
+        @media (max-width: @screen-sm-min) {
+          margin-bottom:0;
+          
+        }
+      }
+      
+    }
+  }
+  
+
+  
+
+}
+
+.container {
+
+  @media (min-width: @screen-sm-min) {
+    width: @screen-sm-min;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @screen-md-min;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @screen-lg-min;
+  }
+}

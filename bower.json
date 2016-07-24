@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+        "jquery": "",
+        "bootstrap":"",
+        "fontawesome":"",
+        "flex-grid":""
+    }
+}

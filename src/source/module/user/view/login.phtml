@@ -1,0 +1,30 @@
+<?
+$message = $action['message'];
+global $_u, $_p;
+?>
+<section id="vldSectionLogin" class="vld-section">
+    <div class="vld-section-login">
+        <div class="row-fluid">    
+            <form action="<?= PAGE_BASE; ?>login" method="POST">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="row">
+                       <div class="col-xs-12">
+                            <div class="well">
+                                <h1>Login</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="password" autocomplete="off" name="login[secret]" >
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-success btn-large col-xs-12">Login</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
